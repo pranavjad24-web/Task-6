@@ -1,0 +1,14 @@
+class Vehicle:
+    def start_engine(self):
+        pass
+
+class Car(Vehicle):
+    def start_engine(self):
+        print("Car engine started")
+
+class Bike(Vehicle):
+    def start_engine(self):
+        print("Bike engine started")
+
+for v in [Car(), Bike()]:
+    v.start_engine()
